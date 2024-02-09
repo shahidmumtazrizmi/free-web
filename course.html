@@ -17,7 +17,7 @@
 	<meta http-equiv="content-language" content="en">
 
 	<link rel="canonical" href="" />	
-	
+
 	<!-- Social Network Meta Tags -->
 	<meta property="og:url" content=" ">
 	<meta property="og:type" content="website">
@@ -60,12 +60,11 @@
  
 	
 	
-
-
-
 	
 
-	
+
+
+
 	<link href="https://crowdo.net/views/full_pages/full-stack-seo/css/app.css" rel="stylesheet" type="text/css" />
 	<script src="https://crowdo.net/views/full_pages/full-stack-seo/resources/packages/jquery/dist/jquery.min.js"></script>
 	<!-- new style for hotfix all project -->
@@ -78,7 +77,26 @@
 	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
  <!-- font awesome cdn link  -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style>
+	<script type="text/javascript">
+		
+			document.addEventListener("DOMContentLoaded", function(){
+
+				function setPaddingTopToParentHeader() {
+					const header = document.querySelector("header.header");
+					const headerHeight = header.clientHeight;
+					const parentHeader = header.parentNode.closest("header");
+					if (parentHeader !== null) {
+						parentHeader.style.paddingTop = `${headerHeight}px`;
+					}else{
+						header.nextElementSibling.style.marginTop = `${headerHeight}px`;
+					}
+				}
+				setPaddingTopToParentHeader();
+				window.addEventListener("resize", setPaddingTopToParentHeader);
+
+			});
+	</script>
+	<style>
 		header.header{
 			position: fixed;
 			top: 0;
@@ -156,7 +174,10 @@
 		</head>
 
 <body class="main-page_bg" id="newCrowdo">
- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK3FD96"
+									height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
 	<symbol id="crowdoLogo" viewBox="0 0 131 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M15.7746 27.5866C15.7746 28.147 15.6362 28.7523 15.3583 29.4044C15.0804 30.0566 14.6445 30.697 14.0485 31.3247C13.4525 31.9525 12.6925 32.4631 11.7676 32.8546C10.8427 33.246 9.76462 33.4423 8.53336 33.4423C7.59961 33.4423 6.75128 33.3544 5.98641 33.1787C5.22154 33.003 4.52835 32.7286 3.90486 32.3567C3.28138 31.9847 2.70798 31.4946 2.18464 30.8864C1.71826 30.3348 1.31962 29.7168 0.989717 29.0325C0.659811 28.3481 0.412382 27.6188 0.247429 26.8427C0.0824764 26.0666 0 25.2426 0 24.3708C0 22.9552 0.207173 21.687 0.621519 20.5663C1.03586 19.4465 1.62891 18.4888 2.40163 17.6921C3.17436 16.8965 4.07964 16.2902 5.11746 15.8743C6.15529 15.4584 7.26185 15.2505 8.43616 15.2505C9.86771 15.2505 11.1432 15.5346 12.2625 16.1028C13.3808 16.671 14.238 17.3729 14.833 18.2086C15.428 19.0443 15.7265 19.835 15.7265 20.579C15.7265 20.987 15.5812 21.3473 15.2915 21.6587C15.0019 21.9701 14.6523 22.1263 14.2419 22.1263C13.7834 22.1263 13.4397 22.018 13.21 21.8022C12.9802 21.5865 12.7249 21.2145 12.4431 20.6864C11.9768 19.8145 11.4269 19.1624 10.7956 18.7299C10.1642 18.2974 9.38562 18.0817 8.45972 18.0817C6.98693 18.0817 5.81459 18.6381 4.94171 19.7501C4.06884 20.8631 3.63289 22.4427 3.63289 24.4909C3.63289 25.8586 3.82632 26.997 4.21219 27.9049C4.59806 28.8128 5.14594 29.4913 5.85386 29.9384C6.56178 30.3866 7.39047 30.6101 8.33994 30.6101C9.36991 30.6101 10.2408 30.3563 10.9527 29.8477C11.6645 29.34 12.2016 28.5932 12.5639 27.61C12.7171 27.1463 12.9056 26.7685 13.1314 26.4756C13.3563 26.1837 13.7186 26.0373 14.2174 26.0373C14.6435 26.0373 15.0097 26.1857 15.3161 26.4815C15.6214 26.7792 15.7746 27.1473 15.7746 27.5866Z" fill="white"/>
 		<path d="M23.8123 25.6185H22.5574V31.2711C22.5574 32.015 22.3925 32.5627 22.0626 32.9151C21.7327 33.2676 21.3026 33.4433 20.7714 33.4433C20.2 33.4433 19.7572 33.2588 19.4439 32.8917C19.1297 32.5236 18.9736 31.9838 18.9736 31.2721V17.7351C18.9736 16.9668 19.1464 16.4113 19.493 16.0667C19.8387 15.723 20.3983 15.5502 21.171 15.5502H27.0004C27.8045 15.5502 28.4928 15.5844 29.0642 15.6518C29.6357 15.7201 30.1502 15.8578 30.6087 16.0657C31.1635 16.2981 31.6544 16.63 32.0815 17.0615C32.5076 17.494 32.8317 17.9958 33.0536 18.5679C33.2745 19.14 33.3854 19.7462 33.3854 20.3857C33.3854 21.6978 33.0133 22.7453 32.269 23.5293C31.5248 24.3132 30.3966 24.8697 28.8836 25.1977C29.5188 25.5336 30.1266 26.0295 30.7059 26.6855C31.2852 27.3416 31.8017 28.0396 32.2563 28.7796C32.7109 29.5197 33.0653 30.1874 33.3187 30.7839C33.572 31.3804 33.6986 31.7905 33.6986 32.014C33.6986 32.2464 33.624 32.4758 33.4758 32.7042C33.3265 32.9317 33.1233 33.1123 32.866 33.2441C32.6088 33.3759 32.3113 33.4423 31.9725 33.4423C31.57 33.4423 31.2322 33.3486 30.9583 33.1602C30.6843 32.9727 30.4497 32.7345 30.2523 32.4465C30.0549 32.1585 29.7879 31.7348 29.4501 31.1744L28.0136 28.7982C27.4982 27.9264 27.0377 27.2625 26.6322 26.8066C26.2257 26.3507 25.8133 26.0383 25.395 25.8704C24.9748 25.7024 24.4475 25.6185 23.8123 25.6185ZM25.8644 18.2272H22.5574V23.0636H25.7681C26.6292 23.0636 27.3529 22.9894 27.941 22.842C28.5281 22.6936 28.9769 22.4417 29.2871 22.0864C29.5964 21.73 29.7515 21.2399 29.7515 20.6161C29.7515 20.128 29.6269 19.6984 29.3775 19.3264C29.1281 18.9545 28.7824 18.6762 28.3396 18.4927C27.9194 18.315 27.0946 18.2272 25.8644 18.2272Z" fill="white"/>
@@ -686,7 +707,73 @@
 	
 </header>
     <div class="newCrowdo">
-           <section class="guest-posting">
+        <section class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-1">
+                        <div class="header-wrapper">
+                            <div class="header-wrapper__title">
+                                <h1>Guest Posting & <br> SEO Service</h1>
+                            </div>
+                            <div class="header-wrapper__text">
+                                <div class="header-wrapper__text_percent">92%</div>
+                                <p>of our clients end up in the Top 10 in <span class="google">G</span> <span
+                                        class="google">o</span> <span class="google">o</span> <span
+                                        class="google">g</span> <span class="google">l</span> <span
+                                        class="google">e</span> <br> Search. That’s what we call effective outreach</p>
+                            </div>
+                            <div class="header-wrapper__buttons btn-wrapper"> <a href=" #_order" class="btn"
+                                    id="pick_me_options_header" target="_blank">Order now</a> <a
+                                    href=" #" class="btn btn-orange"
+                                    id="request_domain_list_header" target="_blank">Get a free quote</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="header-wrapper-image"> <img src="./views/img/images/rocket.svg"
+                                alt="header man image"> 
+                            
+                                <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+                            </div>
+                        <div class="header-wrapper__buttons-mob btn-wrapper"> <a href=" #_order" class="btn"
+                                id="pick_me_options_mobile_header" target="_blank">Order now</a> <a
+                                href=" #" class="btn btn-orange"
+                                id="request_domain_list_mobile_header" target="_blank">Get a free quote</a> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col offset-sm-1">
+                        <ul class="header-list border-bottom-mob">
+                            <li class="header-list__item">
+                                <div class="header-list__item_icon"><svg class="">
+                                        <use xlink:href="https://crowdo.net/views/img/svg-defs.svg#checkIcon"></use>
+                                    </svg></div>
+                                <p class="header-list__item_text"><span>Authority Blogs</span></p>
+                            </li>
+                            <li class="header-list__item">
+                                <div class="header-list__item_icon"><svg class="">
+                                        <use xlink:href="https://crowdo.net/views/img/svg-defs.svg#checkIcon"></use>
+                                    </svg></div>
+                                <p class="header-list__item_text"><span>Genuine </span> Outreach</p>
+                            </li>
+                            <li class="header-list__item">
+                                <div class="header-list__item_icon"><svg class="">
+                                        <use xlink:href="https://crowdo.net/views/img/svg-defs.svg#checkIcon"></use>
+                                    </svg></div>
+                                <p class="header-list__item_text"><span>100% Relevant </span> to your niche</p>
+                            </li>
+                            <li class="header-list__item">
+                                <div class="header-list__item_icon"><svg class="">
+                                        <use xlink:href="https://crowdo.net/views/img/svg-defs.svg#checkIcon"></use>
+                                    </svg></div>
+                                <p class="header-list__item_text"><span>Affordable Rates</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guest-posting">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -759,6 +846,58 @@
             </div>
         </section>
       
+        <section class="build">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="build__title section-title">
+                            <h2>The way we can build you <br> perfect guest posts:</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 m-auto">
+                        <div class="build-wrapper">
+                            <div class="build-wrapper__image"> <img src="https://crowdo.net/views/img/build.svg"
+                                    alt="build image"> </div>
+                            <div class="build-wrapper__text bottom">
+                                <p>Choose the package that suits you the most</p>
+                                <div class="build-wrapper__text__number">1</div>
+                            </div>
+                            <div class="build-wrapper__text top">
+                                <p> We do our research and look for blogs relevant to your niche </p>
+                                <div class="build-wrapper__text__number">2</div>
+                            </div>
+                            <div class="build-wrapper__text bottom">
+                                <p>You approve our choice/ ask for something different (optional)</p>
+                                <div class="build-wrapper__text__number">3</div>
+                            </div>
+                            <div class="build-wrapper__text top">
+                                <p>We reach out to <br> website owners, who need to <br> approve your guest post <br>
+                                    placement</p>
+                                <div class="build-wrapper__text__number">4</div>
+                            </div>
+                            <div class="build-wrapper__text bottom">
+                                <p>We write an article and send it to the website owner</p>
+                                <div class="build-wrapper__text__number">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="build-buttons">
+                            <div class="build-buttons__wrapper btn-wrapper"> <a href=" #_order" class="btn"
+                                    id="pick_me_options_build_way" target="_blank">Order now</a> <a
+                                    href=" #" class="btn btn-orange"
+                                    id="request_domain_list_build_way" target="_blank">Get a free quote</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
         <section class="outreach__packages" id="outreach__packages">
             <div class="container-fluid">
                 <div class="row">
@@ -1033,7 +1172,35 @@
                 </div>
             </div>
         </section>
-   
+        <section class="outreach__month-warranty">
+            <div class="container">
+                <div class="row">
+                    <div class="col-11 col-sm-8 m-auto">
+                        <div class="outreach__month-warranty__wrapper">
+                            <div class="outreach__month-warranty__wrapper__image">
+                                <div class="outreach__month-warranty__wrapper__image_icon"> <svg class="">
+                                        <use
+                                            xlink:href="https://crowdo.net/views/img/svg-defs.svg#outreachMonthWarrantyIcon">
+                                        </use>
+                                    </svg> </div>
+                                <div class="outreach__month-warranty__wrapper__image_bg one"> <img
+                                        src="https://crowdo.net/views/img/outreach/month-warranty-bg.svg" alt="icon bg">
+                                </div>
+                            </div>
+                            <div class="outreach__month-warranty__wrapper__text">
+                                <h3>12-month warranty</h3>
+                                <p>We got you secured! We've never encountered a guest post deletion, but if this happen
+                                    - we will offer a free replacement of the same quality. The warranty is valid for 12
+                                    months, counting from the day we've sent you a report.</p>
+                                <p> <span> Note: if you would like to order a guest post/ niche edit for grey <br>
+                                        niches (gambling, pharmacy, cannabis) - the price will be higher </span> </p>
+                            </div>
+                            <div class="outreach__month-warranty__wrapper__border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
@@ -1145,9 +1312,7 @@
 
 
 
-
-
-
+	
 
 
 
